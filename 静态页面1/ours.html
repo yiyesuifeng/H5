@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="ours.css">
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <div id="title">
+            <span class="welcome fl"> 欢迎来到一叶随枫的空间</span>
+            <span class="e-mail fr">版权及解释权@一叶随枫</span>
+        </div>
+        <div class="clear"></div>
+        <div class="house fl">
+            <span class="logo" ><img src="img/logo.png" height="150" width="166"/></span>
+            <ul class="fr">
+                <li><a href="index.html">首页</a></li>
+                <li class="li1"><a href="voices.html">流年追声</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">凿壁偷光</a></li>
+                        <li><a href="#">不谙世事</a></li>
+                        <li><a href="#">心之所动</a></li>
+                    </ul>
+                </li>
+                <li class="li1"><a href="flowers.html">沉默花雨</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">枫叶飘零</a></li>
+                        <li><a href="#">白雪皑皑</a></li>
+                        <li><a href="#">流星赶月</a></li>
+                    </ul>
+                </li>
+                <li class="li1"><a href="ours.html">那时我们</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">难得沉默</a></li>
+                        <li><a href="#">厌倦漂泊</a></li>
+                        <li><a href="#">夕阳不走</a></li>
+                    </ul>
+                </li>
+                <li><a href="speak.html">随意留言</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div id="banner"></div>
+<div id="content">
+    <h1>岁月难得沉默</h1>
+    <div class="ying">
+        <div class="ying1 fl"><img src="img/ying1.jpg" height="541" width="250"/></div>
+        <div class="ying2 fl"><img src="img/ying2.jpg" height="541" width="250"/></div>
+        <div class="ying3 fl"><img src="img/ying3.jpg" height="541" width="250"/></div>
+        <div class="ying4 fl"><img src="img/ying4.jpg" height="541" width="250"/></div>
+        <div class="ying5 fr"><img src="img/ying5.jpg" height="541" width="250"/></div>
+        <div class="clear"></div>
+    </div>
+    <h1>秋风厌倦漂泊</h1>
+    <div class="hua">
+        <div class="hua1 fl"><img src="img/hua1.jpg" height="350" width="500"/><br/>
+            <span class="text">梦回青青池畔</span>
+        </div>
+        <div class="hua2 fl"><img src="img/hua2.jpg" height="350" width="500"/><br/>
+            <span class="text">点点江枫渔火</span>
+        </div>
+        <div class="hua3 fr"><img src="img/hua3.jpg" height="350" width="500"/><br/>
+            <span class="text">回忆灯火阑珊</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+    <h1>夕阳赖着不走</h1>
+    <div class="yu">
+        <div class="yu1 "><img src="img/yu1.jpg" height="100" width="500"/></div>
+        <div class="yu2 "><img src="img/yu2.jpg" height="100" width="500"/></div>
+        <div class="yu3 "><img src="img/yu3.jpg" height="100" width="500"/></div>
+        <div class="yu4 "><img src="img/yu4.jpg" height="100" width="500"/></div>
+        <div class="yu5 "><img src="img/yu5.jpg" height="100" width="500"/></div>
+        <div class="yu6 "><img src="img/yu6.jpg" height="100" width="500"/></div>
+        <div class="yu7 "><img src="img/yu7.jpg" height="100" width="500"/></div>
+    </div>
+    <h1>白雪纷飞 都成空</h1>
+    <div class=""></div>
+
+
+
+
+
+
+</div>
+<div id="footer">
+    <div class="bot1 fl">
+
+        <img src="img/w1.jpg" height="240" width="300"/></div>
+
+    <div class="bot2 fl">
+        <h2>友情链接</h2>
+        <h3><a href="voices.html">流年追声</a></h3>
+        <h3><a href="flowers.html">沉默花雨</a></h3>
+        <h3><a href="ours.html">那时我们</a></h3>
+        <h3><a href="speak.html">随意留言</a></h3>
+    </div>
+    <div class="bot3 fr">
+        版权所有：一叶随枫
+    </div>
+    <div class="clear"></div>
+
+
+
+
+</div>
+<script>
+    var  lis = document.querySelectorAll(".li1")
+    for(var i =0;i<lis.length;i++){
+        lis[i].onmouseover=function () {
+            this.querySelector("ul").style.display="block"
+        }
+        lis[i].onmouseout=function () {
+            this.querySelector("ul").style.display="none"
+        }
+    }
+</script>
+
+</body>
+</html>

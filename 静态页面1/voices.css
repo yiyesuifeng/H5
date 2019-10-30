@@ -1,0 +1,171 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear {
+    clear: both;
+}
+#header{
+    height: 146px;
+}
+#container {
+    margin: 0 auto;
+}
+#title{
+    height: 48px;
+    background-color: skyblue;
+    color: white;
+    font-family: 方正姚体;
+    font-size: 14px;
+    margin:0 auto;
+    padding-left: 30px;
+    line-height: 48px;
+}
+.welcome{
+    padding-left: 90px;
+}
+.e-mail{
+    padding-right: 110px;
+}
+div ul li{
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 62px;
+    margin-left:100px ;
+    float: left;
+    font-size: 14px;
+}
+
+.logo{
+    margin-left: 100px;
+    line-height:140px;
+}
+
+#banner {
+    margin-top: 52px;
+    background-image: url("img/2.jpg ");
+    height: 450px;
+}
+#content{
+    text-align: center;
+}
+h1{
+    font-size: 22px;
+    color: darkblue;
+    font-family: 华文行楷;
+    margin: 20px 0;
+}
+.night{
+    margin-left: 20px;
+}
+.things1{
+    width: 300px;
+    height: 520px;
+    border: 2px solid aqua;
+    margin-left: 150px;
+}
+.things2{
+    width: 300px;
+    height: 520px;
+    border: 2px solid aqua;
+    margin-left: 150px;
+
+}
+.things3{
+    width: 300px;
+    height: 520px;
+    border: 2px solid aqua;
+    margin-right: 150px;
+}
+.text{
+    font-size: 16px;
+    font-family: 华文琥珀;
+}
+
+
+
+.host{
+    margin-left: 210px;
+}
+ul,li{
+    margin: 0 ;
+    padding: 0;
+}
+.boluo1{
+    margin-left: -30px;
+    margin-right: 65px;
+}
+
+.firework{
+    border: 1px solid skyblue;
+    background-color: aqua;
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+.boluo2{
+    margin-right: 180px;
+}
+dl{
+    position: absolute;
+    width: 2400px;
+    left: 0;
+}
+dt{
+    width: 600px;
+    height: 300px;
+    background-color: aqua;
+    list-style: none;
+    color: white;
+    font-size: 3em;
+    float: left;
+}
+
+
+
+#footer{
+    margin-top: 70px;
+    height: 300px;
+    background-color:black ;
+}
+.bot1{
+    margin-top: 35px;
+    margin-left:180px;
+}
+.bot2{
+    margin-top:35px ;
+    margin-left: 200px;
+}
+h4{
+    font-size: 20px;
+    color: white;
+    border-bottom: 2px solid skyblue;
+}
+h5{
+    font-size: 18px;
+    line-height: 55px;
+}
+.bot3{
+    margin-top: 252px;
+    margin-right: 120px;
+    color: gainsboro;
+    font-family: 华文行楷;
+    font-size: 20px;
+}
+ul li ul li{
+    margin: 0;
+    padding: 0;
+}
+li ul1{
+    position: absolute;
+}
+
+
+
+

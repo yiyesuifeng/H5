@@ -1,0 +1,133 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clean{
+    clear: both;
+}
+#header{
+    width: 100%;
+    height: 242px;
+}
+.header_left{
+    margin-left: 80px;
+}
+.header_right{
+    margin-right: 260px;
+    margin-top: 50px;
+}
+.header_right ul li{
+    float: left;
+    font-size: 26px;
+    color: #4F8CEE;
+    font-weight: 600;
+    margin-left: 70px;
+    cursor: pointer;
+    position: relative;
+}
+.header_right ul li .box1{
+    display: none;
+    position: absolute;
+}
+.header_right ul li:hover .box1{
+    display: block;
+}
+.header_right ul li .box2{
+    display: none;
+    position: absolute;
+}
+.header_right ul li:hover .box2{
+    display: block;
+}
+.header_right ul li .box3{
+    display: none;
+    position: absolute;
+}
+.header_right ul li:hover .box3{
+    display: block;
+}
+.header_right ul li .box4{
+    display: none;
+    position: absolute;
+}
+.header_right ul li:hover .box4{
+    display: block;
+}
+#banner{
+    width: 100%;
+}
+#content{
+    width: 100%;
+}
+.all{
+    width: 122px;
+    height: 36px;
+    background-color: #E8E8E8;
+    color: #7B7B7B;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 90px;
+}
+.all:hover{
+    background-color: #ED4A28;
+    color: white;
+}
+.new{
+    width: 122px;
+    height: 36px;
+    background-color: #E8E8E8;
+    color: #7B7B7B;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 90px;
+    margin-left: 3px;
+}
+.new:hover{
+    background-color: #ED4A28;
+    color: white;
+}
+.high{
+    width: 122px;
+    height: 36px;
+    background-color: #E8E8E8;
+    color: #7B7B7B;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 90px;
+    margin-left: 3px;
+}
+.high:hover{
+    background-color: #ED4A28;
+    color: white;
+}
+.shop{
+    width: 122px;
+    height: 36px;
+    background-color: #E8E8E8;
+    color: #7B7B7B;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 90px;
+    margin-left: 3px;
+}
+.shop:hover{
+    background-color: #ED4A28;
+    color: white;
+}
+
+#footer{
+    width: 100%;
+    height: 230px;
+    background-color: #282825;
+    margin-top: 100px;
+}

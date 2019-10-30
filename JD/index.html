@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="zepto-master/src/zepto.min.js"></script>
+    <script src="zepto-master/src/selector.js"></script>
+   	<script src="zepto-master/src/fx.js"></script>
+    <script src="zepto-master/src/touch.js"></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+    
+    <script>
+    	$(function(){
+    		var banner=$(".jd_banner");
+	    	var imgBox=banner.find("ul:first-of-type");
+	    	var indicators=banner.find("ul:eq(1)").find("li");
+	    	var first=imgBox.find("li:first-of-type");
+	    	var last=imgBox.find("li:last-of-type");
+	    	imgBox.append(first.clone());
+	    	last.clone().insertBefore(first);
+	    	var bannerWidth=banner.width();
+	    	var lis=imgBox.find("li");
+	    	var count=lis.length;
+	    	imgBox.width(count*bannerWidth);
+	    	lis.each(function(index,value){
+	            $(lis[index]).width(bannerWidth);
+	        });
+		 
+	        imgBox.css("left",-bannerWidth);
+	
+	        
+	        var index=1;
+			
+	        var imgAnimation=function(){
+	            imgBox.animate({"left":-index*bannerWidth},200,"ease-in-out",function(){ 
+	                        
+	                        if(index==count-1){
+	                            index=1;
+	                            
+	                            imgBox.css("left",-index*bannerWidth);
+	                        }
+	                        else if(index==0){
+	                            index=count-2;
+	                            imgBox.css("left",-index*bannerWidth);
+	                        }
+	                       
+	                        indicators.removeClass("active").eq(index-1).addClass("active");
+	                    }
+	            );
+	        }
+
+        /*开启定时器*/
+        var timerId=setInterval(function(){
+            index++;
+            /*开启过渡*/
+            /*设置定位*/
+            /*在zepto中直接使用animate函数来实现
+            * 1.需要添加动画效果的样式--对象
+            * 2.动画的耗时
+            * 3.动画的速度函数 animation-timing-function
+            * 4.当前动画执行完毕之后的回调*/
+            imgAnimation();
+        },2000);
+        
+        /*添加滑动事件*/
+        /*左滑动*/
+        /*在谷歌浏览器的模拟器中，无法正确的触发swipe相关事件，但是可以触发tap事件*/
+        imgBox.on("swipeLeft",function(){
+            clearInterval(timerId);
+            index++;
+            imgAnimation();
+        });
+        /*右滑动*/
+        imgBox.on("swipeRight",function(){
+            clearInterval(timerId);
+            index--;
+            imgAnimation();
+        });
+    
+    })
+	    	
+        
+    </script>
+</head>
+<body>
+	<div class="jd_layout">
+		<div class="jd_search">
+			<a class="jd_logo"></a>
+			<form class="jd_searchBox">
+				<input type="text" placeholder="请输入商品名称" />
+			</form>
+			<a class="jd_login">登录</a>
+			
+		</div>
+		<div class="jd_banner">
+			<ul class="jd_bannerImg clearfix">
+				<li>
+					<a>
+						<img src="uploads/l1.jpg">
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="uploads/l2.jpg">
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="uploads/l3.jpg">
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="uploads/l4.jpg">
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="uploads/l5.jpg">
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="uploads/l6.jpg">
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="uploads/l7.jpg">
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="uploads/l8.jpg">
+					</a>
+				</li>
+			</ul>
+			<ul class="jd_bannerIndicator">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="jd_nav">
+			<ul class="clearfix">
+				<li>
+					<a><img src="uploads/nav0.png"</a>
+					<p>商品分类</p>
+				</li>
+				<li>
+					<a><img src="uploads/nav1.png"</a>
+					<p>商品分类</p>
+				</li>
+				<li>
+					<a><img src="uploads/nav2.png"</a>
+					<p>商品分类</p>
+				</li>
+				<li>
+					<a><img src="uploads/nav3.png"</a>
+					<p>商品分类</p>
+				</li>
+				<li>
+					<a><img src="uploads/nav4.png"</a>
+					<p>商品分类</p>
+				</li>
+				<li>
+					<a><img src="uploads/nav5.png"</a>
+					<p>商品分类</p>
+				</li>
+				<li>
+					<a><img src="uploads/nav6.png"</a>
+					<p>商品分类</p>
+				</li>
+				<li>
+					<a><img src="uploads/nav7.png"</a>
+					<p>商品分类</p>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="jd_product clearfix jd_sk">
+			<div class="jd_productBox">
+				<div class="jd_pTip">
+					<div class="jd_left f_left">
+	                    <span class="jd_sk_icon f_left m_left10"></span>
+	                    <span class="jd_sk_text f_left m_left10">掌上秒杀</span>
+	                    <div class="jd_sk_time f_left m_left10">
+	                        <span>0</span>
+	                        <span>0</span>
+	                        <span>:</span>
+	                        <span>0</span>
+	                        <span>0</span>
+	                        <span>:</span>
+	                        <span>0</span>
+	                        <span>0</span>
+	                    </div>
+                	</div>
+                	<div class="jd_right f_right m_right10">更多秒杀...</div>
+				</div>
+				<div class="jd_pContent clearfix">
+					<ul>
+                    <li>
+                        <a>
+                            <img src="./uploads/detail01.jpg">
+                        </a>
+                        <p>¥10.00</p>
+                        <p>¥20.00</p>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./uploads/detail01.jpg">
+                        </a>
+                        <p>¥10.00</p>
+                        <p>¥20.00</p>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./uploads/detail01.jpg">
+                        </a>
+                        <p>¥10.00</p>
+                        <p>¥20.00</p>
+                    </li>
+                </ul>
+				</div>
+			</div>
+			<div class="jd_productBox">
+				<div class="jd_pTip">
+					<h3>京东超市</h3>
+				</div>
+				<div class="jd_pContent clearfix">
+					<a href="javascript:;" class="a_50 f_left">
+                    	<img src="./uploads/cp1.jpg" alt="">
+                	</a>
+                	<a href="javascript:;" class="a_50 f_left b_bottom b_left">
+                    	<img src="./uploads/cp2.jpg" alt="">
+                	</a>
+                	<a href="javascript:;" class="a_50 f_left b_left">
+                    	<img src="./uploads/cp3.jpg" alt="">
+                	</a>
+				</div>
+			</div>
+			<div class="jd_productBox">
+				<div class="jd_pTip">
+					<h3>京东超市</h3>
+				</div>
+				<div class="jd_pContent clearfix">
+					<a href="javascript:;" class="a_50 f_right">
+                    	<img src="./uploads/cp4.jpg" alt="">
+                	</a>
+                	<a href="javascript:;" class="a_50 f_left b_bottom b_left">
+                    	<img src="./uploads/cp5.jpg" alt="">
+                	</a>
+                	<a href="javascript:;" class="a_50 f_left b_left">
+                    	<img src="./uploads/cp6.jpg" alt="">
+                	</a>
+				</div>
+			</div>
+			<div class="jd_productBox">
+				<div class="jd_pTip">
+					<h3>京东超市</h3>
+				</div>
+				<div class="jd_pContent clearfix">
+					<a href="javascript:;" class="a_50 f_left">
+                    	<img src="./uploads/cp1.jpg" alt="">
+                	</a>
+                	<a href="javascript:;" class="a_50 f_left b_bottom b_left">
+                    	<img src="./uploads/cp2.jpg" alt="">
+                	</a>
+                	<a href="javascript:;" class="a_50 f_left b_left">
+                    	<img src="./uploads/cp3.jpg" alt="">
+                	</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

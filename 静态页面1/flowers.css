@@ -1,0 +1,146 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear {
+    clear: both;
+}
+#header{
+    height: 146px;
+}
+#container {
+    margin: 0 auto;
+}
+#title{
+    height: 48px;
+    background-color: skyblue;
+    color: white;
+    font-family: 方正姚体;
+    font-size: 14px;
+    margin:0 auto;
+    padding-left: 30px;
+    line-height: 48px;
+}
+.welcome{
+    padding-left: 90px;
+}
+.e-mail{
+    padding-right: 110px;
+}
+div ul li{
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 62px;
+    margin-left:100px ;
+    float: left;
+    font-size: 14px;
+}
+
+.logo{
+    margin-left: 100px;
+    line-height:140px;
+}
+
+#banner {
+    margin-top: 52px;
+    background-image: url("img/banner3.jpg");
+    height: 450px;
+}
+#content{
+    text-align: center;
+}
+table{
+    margin-left: 130px;
+}
+h1{
+    font-size: 24px;
+    font-family: 华文行楷;
+    color: red;
+    margin: 20px 0;
+}
+.img{
+    margin: 10px;
+}
+h2{
+    font-size: 24px;
+    font-family: 华文行楷;
+    color: aqua;
+    margin: 20px 0;
+}
+.xue{
+    margin-left: 15px;
+}
+h3{
+    font-size: 24px;
+    font-family: 华文行楷;
+    color: steelblue;
+    margin: 20px 0;
+}
+.s1{
+    margin-right: 450px;
+    margin-bottom: 20px;
+}
+.s2{
+    margin-left: 450px;
+    margin-bottom: 20px;
+}
+.s3{
+    margin-right: 450px;
+    margin-bottom: 20px;
+
+}
+.s4{
+    margin-left: 450px;
+    margin-bottom: 20px;
+
+}
+.s5{
+    margin-right: 450px;
+    margin-bottom: 20px;
+
+}
+.s6{
+    margin-left: 450px;
+    margin-bottom: 20px;
+
+}
+#footer{
+    margin-top: 70px;
+    height: 300px;
+    background-color:black ;
+}
+.bot1{
+    margin-top: 35px;
+    margin-left:180px;
+}
+.bot2{
+    margin-top:35px ;
+    margin-left: 200px;
+}
+h4{
+    font-size: 20px;
+    color: white;
+    border-bottom: 2px solid skyblue;
+}
+h5{
+    font-size: 18px;
+    line-height: 55px;
+}
+.bot3{
+    margin-top: 252px;
+    margin-right: 120px;
+    color: gainsboro;
+    font-family: 华文行楷;
+    font-size: 20px;
+}
+ul li ul li{
+    margin: 0;
+    padding: 0;
+}
+li ul1{
+    position: absolute;
+}

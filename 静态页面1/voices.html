@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="voices.css">
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <div id="title">
+            <span class="welcome fl"> 欢迎来到一叶随枫的空间</span>
+            <span class="e-mail fr">版权及解释权@一叶随枫</span>
+        </div>
+        <div class="clear"></div>
+        <div class="house fl">
+            <span class="logo" ><img src="img/logo.png" height="150" width="166"/></span>
+            <ul class="fr">
+                <li><a href="index.html">首页</a></li>
+                <li class="li1"><a href="voices.html">流年追声</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">凿壁偷光</a></li>
+                        <li><a href="#">不谙世事</a></li>
+                        <li><a href="#">心之所动</a></li>
+                    </ul>
+                </li>
+                <li class="li1"><a href="flowers.html">沉默花雨</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">枫叶飘零</a></li>
+                        <li><a href="#">白雪皑皑</a></li>
+                        <li><a href="#">流星赶月</a></li>
+                    </ul>
+                </li>
+                <li class="li1"><a href="ours.html">那时我们</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">难得沉默</a></li>
+                        <li><a href="#">厌倦漂泊</a></li>
+                        <li><a href="#">夕阳不走</a></li>
+                    </ul>
+                </li>
+                <li><a href="speak.html">随意留言</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div id="banner"></div>
+<div id="content">
+    <div class="area1">
+        <h1>儿时凿壁偷了谁家的光</h1>
+        <div class="child"><audio autoplay="autoplay" loop="loop" src="bgm/the%20flight.mp3"></audio>
+            <span class="night"><img src="img/night1.jpg" height="300" width="200"/></span>
+            <span class="night"><img src="img/night2.jpg" height="300" width="200"/></span>
+            <span class="night"><img src="img/night3.jpg" height="300" width="200"/></span>
+            <span class="night"><img src="img/night4.jpg" height="300" width="200"/></span>
+            <span class="night"><img src="img/light5.jpg" height="300" width="200"/></span>
+        </div>
+    </div>
+    <div class="area2">
+        <h1>不谙世事繁华</h1>
+        <div class="things1 fl"><img src="img/sky.jpg" height="500" width="300"/>
+            <span class="text">遥望蔚蓝的天空</span></div>
+        <div class="things2 fl"><img src="img/sunny.jpg" height="500" width="300"/>
+            <span class="text">享受温暖的阳光</span></div>
+        <div class="things3 fr"><img src="img/winter.jpg" height="500" width="300"/>
+            <span class="text">漫步寂静的寒林</span></div>
+        <div class="clear"></div>
+    </div>
+    <div class="area3">
+        <h1>心之所动，且就随缘去吧</h1>
+        <div class="host">
+            <div class="boluo1 fl"><img src="img/boluo.gif"/></div>
+            <div class="firework fl">
+                <dl>
+                    <dt><img src="img/firework1.jpg" height="300" width="600"/></dt>
+                    <dt><img src="img/firework2.jpg" height="300" width="600"/></dt>
+                    <dt><img src="img/firework3.jpg" height="300" width="600"/></dt>
+                    <dt><img src="img/firework4.jpg" height="300" width="600"/></dt>
+                </dl>
+            </div>
+            <div class="boluo2 fr"><img src="img/boluo2.gif" height="300" width="224"/></div>
+            <div class="clear"></div>
+            </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="bot1 fl">
+
+        <img src="img/w1.jpg" height="240" width="300"/></div>
+
+    <div class="bot2 fl">
+        <h4>友情链接</h4>
+        <h5><a href="voices.html">流年追声</a></h5>
+        <h5><a href="flowers.html">沉默花雨</a></h5>
+        <h5><a href="ours.html">那时我们</a></h5>
+        <h5><a href="speak.html">随意留言</a></h5>
+    </div>
+    <div class="bot3 fr">
+        版权所有：一叶随枫<br/>
+        BGM:《起风了》-买辣椒也用券
+
+    </div>
+    <div class="clear"></div>
+
+
+
+
+</div>
+<script>
+    var  lis = document.querySelectorAll(".li1")
+    for(var i =0;i<lis.length;i++){
+        lis[i].onmouseover=function () {
+            this.querySelector("ul").style.display="block"
+        }
+        lis[i].onmouseout=function () {
+            this.querySelector("ul").style.display="none"
+        }
+    }
+    var  dl = document.querySelector("dl")
+    console.log(dl.offsetLeft)
+    setInterval(function () {
+        if(dl.offsetLeft==-1800){
+            dl.style.left="0px"
+        }else {
+            dl.style.left=dl.offsetLeft-300+"px"
+        }
+    },1000)
+</script>
+</body>
+</html>

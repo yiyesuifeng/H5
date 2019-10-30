@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="flowers.css">
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <div id="title">
+            <span class="welcome fl"> 欢迎来到一叶随枫的空间</span>
+            <span class="e-mail fr">版权及解释权@一叶随枫</span>
+        </div>
+        <div class="clear"></div>
+        <div class="house fl">
+            <span class="logo" ><img src="img/logo.png" height="150" width="166"/></span>
+            <ul class="fr">
+                <li><a href="index.html">首页</a></li>
+                <li class="li1"><a href="voices.html">流年追声</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">凿壁偷光</a></li>
+                        <li><a href="#">不谙世事</a></li>
+                        <li><a href="#">心之所动</a></li>
+                    </ul>
+                </li>
+                <li class="li1"><a href="flowers.html">沉默花雨</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">枫叶飘零</a></li>
+                        <li><a href="#">白雪皑皑</a></li>
+                        <li><a href="#">流星赶月</a></li>
+                    </ul>
+                </li>
+                <li class="li1"><a href="ours.html">那时我们</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">难得沉默</a></li>
+                        <li><a href="#">厌倦漂泊</a></li>
+                        <li><a href="#">夕阳不走</a></li>
+                    </ul>
+                </li>
+                <li><a href="speak.html">随意留言</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div id="banner"></div>
+<div id="content">
+    <div class="fengye">
+        <h1>霜叶红于二月花</h1>
+        <table>
+            <tr>
+                <td><img src="img/fy2.jpg" height="300"  class="img" width="300"/></td>
+                <td><img src="img/fy4.jpg" height="300" class="img" width="300"/></td>
+                <td colspan="2"><img src="img/fy1.jpg" class="img" height="300" width="600"/></td>
+            </tr>
+            <tr>
+                <td><img src="img/fy3.jpg" height="300" class="img" width="300"/></td>
+                <td><img src="img/fy6.jpg" height="300" class="img" width="300"/></td>
+                <td colspan="2"><img src="img/fy5.jpg" class="img" height="300" width="600"/></td>
+            </tr>
+        </table>
+        <h2>雪拥蓝关马不前</h2>
+        <div class="snow">
+            <span class="xue"><img src="img/snow1.jpg" height="550" width="250"/></span>
+            <span class="xue"><img src="img/snow2.jpg" height="550" width="250"/></span>
+            <span class="xue"><img src="img/snow3.jpg" height="550" width="250"/></span>
+            <span class="xue"><img src="img/snow4.jpg" height="550" width="250"/></span>
+            <span class="xue"><img src="img/snow5.jpg" height="550" width="250"/></span>
+        </div>
+        <h3>衔得流星入画门</h3>
+        <div class="star">
+            <div class="s1"><img src="img/star1.jpg" height="200" width="600"/></div>
+            <div class="s2"><img src="img/star2.jpg" height="200" width="600"/></div>
+            <div class="s3"><img src="img/star5.jpg" height="200" width="600"/></div>
+            <div class="s4"><img src="img/star7.jpg" height="200" width="600"/></div>
+            <div class="s5"><img src="img/star8.jpg" height="200" width="600"/></div>
+            <div class="s6"><img src="img/star9.jpg" height="200" width="600"/></div>
+        </div>
+
+    </div>
+</div>
+<div id="footer">
+    <div class="bot1 fl">
+
+        <img src="img/w1.jpg" height="240" width="300"/></div>
+
+    <div class="bot2 fl">
+        <h4>友情链接</h4>
+        <h5><a href="voices.html">流年追声</a></h5>
+        <h5><a href="flowers.html">沉默花雨</a></h5>
+        <h5><a href="ours.html">那时我们</a></h5>
+        <h5><a href="speak.html">随意留言</a></h5>
+    </div>
+    <div class="bot3 fr">
+        版权所有：一叶随枫
+
+
+    </div>
+    <div class="clear"></div>
+
+
+
+
+</div>
+<script>
+    var  lis = document.querySelectorAll(".li1")
+    for(var i =0;i<lis.length;i++){
+        lis[i].onmouseover=function () {
+            this.querySelector("ul").style.display="block"
+        }
+        lis[i].onmouseout=function () {
+            this.querySelector("ul").style.display="none"
+        }
+    }
+</script>
+
+</body>
+</html>

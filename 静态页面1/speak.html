@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="speak.css">
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <div id="title">
+            <span class="welcome fl"> 欢迎来到一叶随枫的空间</span>
+            <span class="e-mail fr">版权及解释权@一叶随枫</span>
+        </div>
+        <div class="clear"></div>
+        <div class="house fl">
+            <span class="logo" ><img src="img/logo.png" height="150" width="166"/></span>
+            <ul class="fr">
+                <li><a href="index.html">首页</a></li>
+                <li class="li1"><a href="voices.html">流年追声</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">凿壁偷光</a></li>
+                        <li><a href="#">不谙世事</a></li>
+                        <li><a href="#">心之所动</a></li>
+                    </ul>
+                </li>
+                <li class="li1"><a href="flowers.html">沉默花雨</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">枫叶飘零</a></li>
+                        <li><a href="#">白雪皑皑</a></li>
+                        <li><a href="#">流星赶月</a></li>
+                    </ul>
+                </li>
+                <li class="li1"><a href="ours.html">那时我们</a>
+                    <ul class="ul1" style="display: none">
+                        <li><a href="#">难得沉默</a></li>
+                        <li><a href="#">厌倦漂泊</a></li>
+                        <li><a href="#">夕阳不走</a></li>
+                    </ul>
+                </li>
+                <li><a href="speak.html">随意留言</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div id="banner"></div>
+<div id="content">
+    <div class="speak">
+        <div class="text1">
+            <span class="text">昵称:</span><input class="id" type="text" placeholder="请输入昵称">
+        </div>
+        <div class="text2">
+            <span class="text">账号:</span><input class="number" type="text" placeholder="请输入账号">
+        </div>
+        <div class="text3">
+            <span class="text">请留言:</span>
+        </div>
+        <div class="text4">
+            <textarea rows="15" cols="100" name="textarea" placeholder="(不少于50字)"></textarea>
+        </div>
+        <div class="text5">
+            <input type="button" value="提交" class="sumbit" name="sumbit">
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="bot1 fl">
+
+        <img src="img/w1.jpg" height="240" width="300"/></div>
+
+    <div class="bot2 fl">
+        <h2>友情链接</h2>
+        <h3><a href="voices.html">流年追声</a></h3>
+        <h3><a href="flowers.html">沉默花雨</a></h3>
+        <h3><a href="ours.html">那时我们</a></h3>
+        <h3><a href="speak.html">随意留言</a></h3>
+    </div>
+    <div class="bot3 fr">
+        版权所有：一叶随枫
+
+    </div>
+    <div class="clear"></div>
+
+
+
+
+</div>
+<script>
+    var  lis = document.querySelectorAll(".li1")
+    for(var i =0;i<lis.length;i++){
+        lis[i].onmouseover=function () {
+            this.querySelector("ul").style.display="block"
+        }
+        lis[i].onmouseout=function () {
+            this.querySelector("ul").style.display="none"
+        }
+    }
+</script>
+
+
+</body>
+</html>
