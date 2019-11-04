@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery/jquery.js" ></script>
+    <script>
+    	$(function(){
+    		//ajax  get  post   json
+    		$(":button").click(function(){
+    			//alert(1);
+    			console.info($("form:eq(0)").serialize());
+    			
+    			var obj={
+    				username:$("#username").val(),
+    				password:$("#password").val()
+    			}
+    			//-->json
+					console.info(JSON.stringify(obj));
+    			$.ajax({
+    				type:'post',
+    				url:"http://localhost:8020/user/login",
+    				//处理：get/post  表单序列化
+    				//data:$("form:eq(0)").serialize(),
+    				//json 需要contentType
+    				contentType:"application/json",
+    				//数据就是json格式
+    				data:JSON.stringify(obj),
+    				dataType:"text",
+    				success:function(data){
+    					console.info(data);
+    				}
+    			});
+    			
+    		});
+    		
+    	})
+    	
+    	
+    </script>
+    
+</head>
+<body>
+    <form action="http://localhost:8020/user/login" >
+        用户名：<input type="text" name="username" id="username"><br>
+        密码：<input type="password" name="password" id="password"><br>
+        <input type="button" value="提交">
+    </form>
+</body>
+</html>
